@@ -76,14 +76,14 @@ html{
     line-height: 0;
 }
 
-.rating-bar .circle:hover{
+.rating-bar .circle:hover, .rating-bar .circle:hover p{
 
     color:white;
     background-color: var(--circle-secondary);
 
 }
 
-.rating-bar .circle:focus{
+.rating-bar .circle:focus, .rating-bar .circle:focus p{
 
     color:white;
     background-color: var(--accent-orange);
