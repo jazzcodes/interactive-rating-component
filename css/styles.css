@@ -60,15 +60,20 @@ html{
     background-color: rgba(124, 135, 152,0.1);
    
     border-radius: 25px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    border: 0;
 }
 
-.rating-bar .circle{
+
+
+.rating-bar .circle p{
     color:var(--paragraph);
     font-size: 1.6rem;
     font-weight: 600;
+    line-height: 0;
 }
 
 .rating-bar .circle:hover{
@@ -100,16 +105,21 @@ button{
     background-color: var(--accent-orange);
     color:var(--white);
     text-transform: uppercase;
-    padding: 1.5rem;
+    border:0;
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn p{
     font-size: 1.8rem;
     font-family: 'Overpass', sans-serif ;
     letter-spacing: 2px;
     font-weight: 400;
-    border-radius: 3rem;
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 1;
+
 }
 
 .submit-btn:hover{
@@ -211,8 +221,12 @@ button{
     }
 
     .submit-btn{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        /* padding-top: 1rem;
+        padding-bottom: 1rem; */
+       
+    }
+
+    .submit-btn p{
         font-size: 1.5rem;
     }
 }
